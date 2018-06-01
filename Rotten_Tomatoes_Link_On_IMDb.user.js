@@ -54,8 +54,8 @@ GM_xmlhttpRequest({
 	url: "http://www.omdbapi.com/?apikey=6be019fc&tomatoes=true&i=" + IMDbID,
 	onload: function(response) {
 		var json = JSON.parse(response.responseText);
-		if (json && json.tomatoURL && json.tomatoURL != "N/A") {
-			addButton(json.tomatoURL);
+		if (json && json.tomatoURL && json.tomatoURL == "N/A") {
+			addButton("https://d2uzw09ppuvr94.cloudfront.net/title/" + IMDbID);
 		}
 		else if (json && json.Error) {
 			console.log("Error: " + json.Error);
