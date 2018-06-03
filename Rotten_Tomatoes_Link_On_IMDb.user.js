@@ -51,14 +51,14 @@ var addButton = function(link) {
 // get Rotten Tomatoes movie alias from Rotten Tomatoes API
 GM_xmlhttpRequest({
 	method: "GET",
-	url: "http://www.omdbapi.com/?apikey=6be019fc&tomatoes=true&i=" + IMDbID,
+	url: "https://d2uzw09ppuvr94.cloudfront.net/title/" + IMDbID,
 	onload: function(response) {
-		var json = JSON.parse(response.responseText);
-		if (json && json.tomatoURL && json.tomatoURL == "N/A") {
+		var flexi = response.status
+		if (flexi != 403) {
 			addButton("https://d2uzw09ppuvr94.cloudfront.net/title/" + IMDbID);
 		}
-		else if (json && json.Error) {
-			console.log("Error: " + json.Error);
+		else if (flexi) {
+			console.log("Error: " + flexi);
 		}
 	}
 });
