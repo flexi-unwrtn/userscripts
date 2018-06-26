@@ -23,7 +23,7 @@ var addButton = function(link) {
 	var RT_icon = document.createElement('img');
 	// RT_icon.src = "http://www.rottentomatoes.com/favicon.ico";
 	// RT_icon.src = "https://staticv2.rottentomatoes.com/static/images/icons/favicon.ico";
-	RT_icon.src = "https://staticv2-4.rottentomatoes.com/static/images/icons/favicon.ico";
+	RT_icon.src = "https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png";
 	RT_icon.width = RT_icon.height = 16;
 	RT_icon.style.verticalAlign = "bottom";
 
