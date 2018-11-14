@@ -51,11 +51,11 @@ var addButton = function(link) {
 // get Rotten Tomatoes movie alias from Rotten Tomatoes API
 GM_xmlhttpRequest({
 	method: "GET",
-	url: "https://d2uzw09ppuvr94.cloudfront.net/title/" + IMDbID,
+	url: "https://d12y6y9b7x77t.cloudfront.net/" + IMDbID,
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://d2uzw09ppuvr94.cloudfront.net/title/" + IMDbID);
+			addButton("https://d12y6y9b7x77t.cloudfront.net/" + IMDbID);
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
