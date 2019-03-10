@@ -41,9 +41,9 @@ Makes Google search page more compact and removes some unnecessary information.
 Creates direct download links for subtitles on opensubtitles.org.
 
 
-#### <img src="https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png" width="16px" height="16px"> Rotten Tomatoes Link On IMDb <sup>( [description](https://github.com/Ede123/userscripts/blob/master/Rotten_Tomatoes_Link_On_IMDb.md) | [source](https://github.com/Ede123/userscripts/blob/master/Rotten_Tomatoes_Link_On_IMDb.user.js) | [install](https://raw.githubusercontent.com/Ede123/userscripts/master/Rotten_Tomatoes_Link_On_IMDb.user.js) )</sup>
+#### <img src="https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png" width="16px" height="16px"> Rotten Tomatoes Link On IMDb <sup>( [description](https://github.com/flexi-unwrtn/userscripts/blob/master/Rotten_Tomatoes_Link_On_IMDb.md) | [source](https://github.com/flexi-unwrtn/userscripts/blob/master/Rotten_Tomatoes_Link_On_IMDb.user.js) | [install](https://raw.githubusercontent.com/flexi-unwrtn/userscripts/master/Rotten_Tomatoes_Link_On_IMDb.user.js) )</sup>
 
-Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie.
+Adds a direct link to the WatchItNowOrLater.com Rotten Tomatoes Movie TV Series page for every IMDb listing.
 
 
 #### <img src="https://raw.githubusercontent.com/Ede123/userscripts/master/icons/TV_Today.png" width="16px" height="16px"> TV Today Enhancer <sup>( [description](https://github.com/Ede123/userscripts/blob/master/TV_Today_Enhancer.md) | [source](https://github.com/Ede123/userscripts/blob/master/TV_Today_Enhancer.user.js) | [install](https://raw.githubusercontent.com/Ede123/userscripts/master/TV_Today_Enhancer.user.js) )</sup>
