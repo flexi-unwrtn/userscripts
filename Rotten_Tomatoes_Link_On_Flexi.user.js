@@ -55,7 +55,7 @@ GM_xmlhttpRequest({
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://d12y6y9b7x77t.cloudfront.net/" + IMDbID);
+			addButton("https://d1ytx3lv2b2m7c.cloudfront.net/d/" + IMDbID +".html");
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
