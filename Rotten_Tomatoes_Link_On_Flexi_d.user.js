@@ -1,5 +1,5 @@
 ﻿// ==UserScript==
-// @name        Rotten Tomatoes Link On IMDb
+// @name        Rotten Tomatoes Link On IMDb 7Digits
 // @namespace   https://github.com/Ede123/userscripts
 // @version     1.2.1
 // @description Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie
