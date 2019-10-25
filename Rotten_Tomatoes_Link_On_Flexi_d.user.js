@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
-// @name        Rotten Tomatoes Link On Flexi
+// @name        Rotten Tomatoes Link On IMDb
 // @namespace   https://github.com/Ede123/userscripts
-// @version     1.1.1
+// @version     1.2.1
 // @description Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie
 // @icon        https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png
 // @author      Eduard Braun <eduard.braun2@gmx.de>
@@ -13,7 +13,7 @@
 // ==/UserScript==
 
 // get IMDb movie ID
-var IMDbID_RegEx = /\/title\/(tt\d{7})\//;
+var IMDbID_RegEx = /\/title\/(tt\d{8})\//;
 var IMDbID = IMDbID_RegEx.exec(window.location.href)[1];
 
 
@@ -55,7 +55,7 @@ GM_xmlhttpRequest({
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://d1ytx3lv2b2m7c.cloudfront.net/d/" + IMDbID +".html");
+			addButton("https://d12y6y9b7x77t.cloudfront.net/" + IMDbID);
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
