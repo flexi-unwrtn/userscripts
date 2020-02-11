@@ -1,13 +1,14 @@
 ﻿// ==UserScript==
 // @name        Rotten Tomatoes Link On IMDb 7Digits
 // @namespace   https://github.com/Ede123/userscripts
-// @version     1.2.1
+// @version     1.3.1
 // @description Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie
 // @icon        https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png
 // @author      Eduard Braun <eduard.braun2@gmx.de>
 // @license     GPL-3.0+; http://www.gnu.org/copyleft/gpl.html
 // @include     http://www.imdb.com/title/tt*
 // @include     https://www.imdb.com/title/tt*
+// @include	https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/tt*
 // @noframes
 // @grant       GM_xmlhttpRequest
 // ==/UserScript==
@@ -51,11 +52,11 @@ var addButton = function(link) {
 // get Rotten Tomatoes movie alias from Rotten Tomatoes API
 GM_xmlhttpRequest({
 	method: "GET",
-	url: "https://d12y6y9b7x77t.cloudfront.net/" + IMDbID,
+	url: "https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + ".html",
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://d12y6y9b7x77t.cloudfront.net/" + IMDbID);
+			addButton("https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + "html");
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
