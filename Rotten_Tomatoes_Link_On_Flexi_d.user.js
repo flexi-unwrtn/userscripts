@@ -56,7 +56,7 @@ GM_xmlhttpRequest({
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + "html");
+			addButton("https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + ".html");
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
