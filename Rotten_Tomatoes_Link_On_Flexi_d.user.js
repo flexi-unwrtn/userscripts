@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        Rotten Tomatoes Link On IMDb 7Digits
 // @namespace   https://github.com/Ede123/userscripts
-// @version     1.3.1
+// @version     1.3.2
 // @description Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie
 // @icon        https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png
 // @author      Eduard Braun <eduard.braun2@gmx.de>
@@ -52,11 +52,11 @@ var addButton = function(link) {
 // get Rotten Tomatoes movie alias from Rotten Tomatoes API
 GM_xmlhttpRequest({
 	method: "GET",
-	url: "https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + ".html",
+	url: "https://ipfs.io/ipfs/QmXDQdeFb3mVM7gHNJGF2buwU17UMsuhnNrNRECC9wNiUY/" + IMDbID + ".html",
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + ".html");
+			addButton("https://ipfs.io/ipfs/QmXDQdeFb3mVM7gHNJGF2buwU17UMsuhnNrNRECC9wNiUY/" + IMDbID + ".html");
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
