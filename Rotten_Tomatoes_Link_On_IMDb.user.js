@@ -1,14 +1,14 @@
 ﻿// ==UserScript==
 // @name        Rotten Tomatoes Link On IMDb 8 digits
 // @namespace   https://github.com/Ede123/userscripts
-// @version     1.3.1
+// @version     1.3.2
 // @description Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie
 // @icon        https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png
 // @author      Eduard Braun <eduard.braun2@gmx.de>
 // @license     GPL-3.0+; http://www.gnu.org/copyleft/gpl.html
 // @include     http://www.imdb.com/title/tt*
 // @include     https://www.imdb.com/title/tt*
-// @include	https://gateway.pinata.cloud/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/tt*
+// @include	https://gateway.pinata.cloud/ipfs/QmXDQdeFb3mVM7gHNJGF2buwU17UMsuhnNrNRECC9wNiUY/tt*
 // @noframes
 // @grant       GM_xmlhttpRequest
 // ==/UserScript==
@@ -52,11 +52,11 @@ var addButton = function(link) {
 // get Rotten Tomatoes movie alias from Rotten Tomatoes API
 GM_xmlhttpRequest({
 	method: "GET",
-	url: "https://gateway.pinata.cloud/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + ".html",
+	url: "https://gateway.pinata.cloud/ipfs/QmXDQdeFb3mVM7gHNJGF2buwU17UMsuhnNrNRECC9wNiUY/" + IMDbID + ".html",
 	onload: function(response) {
 		var flexi = response.status
 		if (flexi != 403) {
-			addButton("https://gateway.pinata.cloud/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/" + IMDbID + ".html");
+			addButton("https://gateway.pinata.cloud/ipfs/QmXDQdeFb3mVM7gHNJGF2buwU17UMsuhnNrNRECC9wNiUY/" + IMDbID + ".html");
 		}
 		else if (flexi) {
 			console.log("Error: " + flexi);
