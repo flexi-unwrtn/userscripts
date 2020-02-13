@@ -8,7 +8,7 @@
 // @license     GPL-3.0+; http://www.gnu.org/copyleft/gpl.html
 // @include     http://www.imdb.com/title/tt*
 // @include     https://www.imdb.com/title/tt*
-// @include	https://ipfs.io/ipfs/QmP5S6cN5mNfVudwAb81yZj2JqL8cwqbSRDp9ZvTmHFmpD/tt*
+// @include	https://ipfs.io/ipfs/QmXDQdeFb3mVM7gHNJGF2buwU17UMsuhnNrNRECC9wNiUY/tt*
 // @noframes
 // @grant       GM_xmlhttpRequest
 // ==/UserScript==
