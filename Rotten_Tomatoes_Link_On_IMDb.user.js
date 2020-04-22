@@ -1,7 +1,7 @@
 ﻿// ==UserScript==
 // @name        Rotten Tomatoes Link On IMDb 8 digits
 // @namespace   https://github.com/Ede123/userscripts
-// @version     1.3.5
+// @version     1.3.6
 // @description Adds a direct link to the corresponding Rotten Tomatoes movie description page for every IMDb movie
 // @icon        https://raw.githubusercontent.com/Ede123/userscripts/master/icons/Rotten_Tomatoes.png
 // @author      Eduard Braun <eduard.braun2@gmx.de>
@@ -55,7 +55,7 @@ GM_xmlhttpRequest({
 	url: "https://gateway.pinata.cloud/ipfs/QmUr5m7gk6TBmMp2hr43BHkDYRunHYEjUwpQp11jvFBEAu/flexi/" + IMDbID + ".html",
 	onload: function(response) {
 		var flexi = response.status
-		if (flexi != 403) {
+		if (flexi != 404) {
 			addButton("https://gateway.pinata.cloud/ipfs/QmUr5m7gk6TBmMp2hr43BHkDYRunHYEjUwpQp11jvFBEAu/flexi/" + IMDbID + ".html");
 		}
 		else if (flexi) {
